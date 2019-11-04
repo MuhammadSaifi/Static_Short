@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Static_Short</string>
+
+    <string name="short_label">Short Label</string>
+    <string name="long_label">This is Long Label</string>
+    <string name="disabled_message">This shortcut is disabled</string>
+    <string name="short_label_two">Short Label two</string>
+    <string name="long_label_two">This is Long Label two</string>
+    <string name="disabled_message_two">This shortcut two is disabled</string>
+</resources>

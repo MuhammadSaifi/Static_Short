@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="ActivityOne"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_label"
+        android:shortcutLongLabel="@string/long_label"
+        android:shortcutDisabledMessage="@string/disabled_message"
+        >
+        <!--Line 8 to 10 use to display title of our shortcut -->
+        <!-- Set Intent and Category -->
+        <!-- Intent will be open our selected activity when we click on it-->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.static_short"
+            android:targetClass="com.example.static_short.ActivityOne"
+            />
+        <!-- In the intent i use two attributes line 17 to 18 this is out main.kt pakage adress -->
+        <!-- in class we use our require page pakage with .Name-->
+        <category android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <!-- For activity two -->
+    <shortcut
+        android:shortcutId="ActivityTwo"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_label_two"
+        android:shortcutLongLabel="@string/long_label_two"
+        android:shortcutDisabledMessage="@string/disabled_message_two"
+        >
+        <!-- Set Intent and Category -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.static_short"
+            android:targetClass="com.example.static_short.ActivityTwo"
+            />
+        <category android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+</shortcuts>
